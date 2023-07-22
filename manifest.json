@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Gazeta Komentarze",
+  "version": "1.0",
+  "description": "Rozszerzenie przywracające wyłączone komentarze na stronach Gazeta.pl",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://wiadomosci.gazeta.pl/wiadomosci/*",
+        "https://next.gazeta.pl/next/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
